@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 252, 0, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainWrapper {
+    color: white;
+    background: rgba(0, 252, 0, 1);
+    width: 100%;
+    padding: 2.5em;
+    border-radius: 2em;
+    position: relative;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, .279), -10px -10px 30px rgba(0, 0, 0, .279);
+}
+
+.mainWrapper:after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    width: 80%;
+    background-color: white;
+    height: 120%;
+    z-index: -1;
+    border-radius: 0.4rem;
+}
+
+.inputWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    background-color: transparent;
+    font-size: 1em;
+    width: 77%;
+    outline: none;
+    padding: 0.5em 0.3em;
+    border: none;
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+.searchBtn {
+    background-color: rgba(0, 152, 0, 1);
+    padding: 0.4em 0.4em;
+    font-size: 1.1em;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px 5px rgba(0, 152, 0, 1), 3px 3px 5px rgba(0, 152, 0, 1);
+    cursor: pointer;
+    transition: transform 2s ease;
+}
+
+.searchBtn:active {
+    transform: scale(-1);
+}
+
+.resultWrapper {
+    margin-top: 1.5em;
+}
+
+.searchedWord {
+    font-size: 1.8em;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, .8);
+}
+
+.phoneticsPartSpeech {
+    display: flex;
+    gap: 0.4em;
+}
+
+.phonetics {
+    color: rgba(255, 255, 255, .8);
+    font-size: 1.06rem;
+    font-style: italic;
+}
+
+.partOfSpeech {
+    color: red;
+}
+
+.defination {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0.8em;
+    line-height: 1.3em;
+    color: rgba(0, 118, 0, 1);
+    font-style: oblique;
+}
+
+.exampleWord {
+    background-color: rgba(0, 152, 0, 1);
+    border-left: 7px solid white;
+    padding: 1em 0.7em;
+    margin-top: 0.8em;
+    font-size: 1.2em;
+    font-style: oblique;
+    color: rgba(255, 255, 255, .8);
+}
+
+#resultContainer,
+.wordDetails {
+    color: red;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.wordDetails {
+    text-align: center;
+}
+
+.errorMsg {
+    color: rgba(255, 0, 0, .8);
+    font-size: 1.1em;
+}
+
+.hide {
+    display: none;
+}

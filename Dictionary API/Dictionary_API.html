@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary-API</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mainWrapper">
+            <div class="inputWrapper">
+                <input type="text" name="text" id="input" class="input" placeholder="Enter the word here...">
+                <input type="button" value="Search" id="searchBtn" class="searchBtn">
+            </div>
+            <div id="resultContainer" class="resultWrapper">
+                <div class="errorMsg"> No word searched yet...</div>
+            </div>
+
+        </div>
+    </div>
+
+    <template id='resultTemplate'>
+        <div class="resultWrapper">
+            <div class="searchedWord"></div>
+            <div class="wordDetails">
+                <div class="phoneticsPartSpeech">
+                    <div class="partOfSpeech"></div>
+                    <div class="phonetics"></div>
+                </div>
+                <div class="defination"></div>
+                <div class="exampleWord"></div>
+            </div>
+      
+        </div>
+    </template>
+
+</body>
+
+</html>
